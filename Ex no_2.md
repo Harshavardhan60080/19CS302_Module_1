@@ -1,35 +1,36 @@
-# EX 2 C program to check whether the attendance is PRESENT using simple if statement.
+# EX 2 C Write a C program to read a value and check whether that number is less than 100 or not. using  if-else
+
 ## DATE:
 ## AIM:
-To write a program to check whether the attendance is PRESENT using simple if statement.
+To write a program to check whether number is less than 100 or not. using  if-else
 
 ## Algorithm
-1. Start. 
-2. Declare a variable value of type char. 
-3. Prompt the user to enter a value. 
-4. Read the value using scanf. 
-5. Check whether the attendance is PRESENT. 
-6. If true, print "Present". 
-7. If false, print " ". 
-8. End.  
+
+1. Start the program.
+2. Declare an integer variable `a`.
+3. Read the value of `a` using `scanf()`.
+4. Check the condition `a < 100` using the **if–else** statement and display the corresponding message.
+5. Stop the program.
 
 ## Program:
 ```
-#include<stdio.h> 
-int main(){ 
-char p1; 
-scanf("%c", &p1); 
-if(p1=='P') 
-{ 
-printf("Present"); 
-} 
-return 0; 
-} 
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+        if(a<100)
+        printf("Number is less than 100");
+        else
+        printf("Number is NOT less than 100");
+        return 0;
+    }
+    
 ```
 
 ## Output:
+<img width="818" height="219" alt="Screenshot 2026-03-18 212545" src="https://github.com/user-attachments/assets/e8d68776-aae2-4f1c-a4bc-cb31121419a3" />
 
-![image](https://github.com/user-attachments/assets/77015af4-2884-478d-a32f-0177cb8f9afe)
 
 
 ## Result:
