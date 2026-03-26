@@ -1,34 +1,38 @@
-# EX 3 C program to find number of years based on principle,rate & simple interest.
+# EX 3 C program to find principle amount based on simple interest, time & rate of interest.
 ## DATE:
 ## AIM:
-To write a C program to find number of years based on principle,rate & simple interest.
+To write a C program to  find principle amount based on simple interest, time & rate of interest.
 
 ## Algorithm
-1. Start. 
-2. Declare the variables. 
-3. Prompt the user to enter a value. 
-4. Read the value using scanf. 
-5. Calculate the number of years using the formula: 
-6. End .   
+
+1. Start the program.
+2. Declare floating-point variables `si`, `year`, `rate`, and `principle`.
+3. Read the values of `si`, `year`, and `rate` using `scanf()`.
+4. Calculate the principal amount using the formula `principle = (si * 100) / (year * rate)`.
+5. Display the principal amount using `printf()` and stop the program.
+   
 
 ## Program:
 ```
-#include <stdio.h> 
-#include <math.h> 
-int main() 
-{ 
-float p,n,r,si,ci; 
-scanf("%f%f%f", &p,&n,&r); 
-si=((p*n*r)/100); 
-ci=(p)*(pow((1+ r/100),n)); 
-printf("Simple Interest = %0.2f\nCompound Interest = %0.2f", si,ci); 
-return 0; 
-} 
+#include <stdio.h>
+int main()
+{
+    float si, year, rate,principle;
+     
+      scanf("%f", &si);
+      scanf("%f", &year);
+      scanf("%f",&rate);
+principle =(si *100)/(year*rate);
+   printf("Principle amount is = %.2f", principle);
+    return 0;
+}
+
+
 ```
 
 ## Output:
+<img width="816" height="178" alt="Screenshot 2026-03-18 213330" src="https://github.com/user-attachments/assets/ee06fd62-b34d-4fbb-8209-8ddae2457847" />
 
-![image](https://github.com/user-attachments/assets/e57b91af-afe3-4473-89a8-659b53d2184f)
 
 
 ## Result:
