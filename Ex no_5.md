@@ -1,35 +1,40 @@
-# EX 5 C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+# EX 5 C program to calculate total, average and percentage of 4 subjects for engineering admission.
 ## DATE:
 ## AIM:
-To write a C program to calculate the total marks, average, and percentage of marks obtained in seven subjects.
+To write a C program to calculate total, average and percentage of 4 subjects for engineering admission.
 
 ## Algorithm
-1. Start. 
-2. Declare three variable value of type int for marks. 
-3. Prompt the user to enter a value. 
-4. Read the value using scanf. 
-5. Find total and average. 
-6. Print the result 
-7. End.    
+
+1. Start the program.
+2. Declare integer variables `a`, `b`, `c`, `d` and floating variables `tot`, `avg`, `percent`.
+3. Read the four marks `a`, `b`, `c`, and `d` using `scanf()`.
+4. Calculate the **total**, **average**, and **percentage** using the given formulas.
+5. Display the total, average, and percentage using `printf()` and stop the program.
+   
 
 ## Program:
 ```
-#include <stdio.h> 
-int main() { 
-    int sub1, sub2, sub3, total; 
-    float average; 
-    scanf("%d %d %d", &sub1,&sub2,&sub3); 
-    total = sub1 + sub2 + sub3; 
-    average = total / 3.0; 
-    printf("\nTotal : %d\n", total); 
-    printf("Average : %.2f\n", average); 
-    return 0; 
-} 
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d;
+    float tot,avg,percent;
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    tot=a+b+c+d;
+    avg=(a+b+c+d)/4.0;
+    percent=(a+b+c+d)/4.0*(1.00);
+    printf("Total marks = %.2f \n",tot);
+    printf("Average marks = %.2f\n",avg);
+    printf("Percentage = %.2f\n",percent);
+    return 0;
+
+}
+    
 ```
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/ef557452-87c6-4a46-8235-b0ec5919d0d5)
+<img width="819" height="225" alt="Screenshot 2026-03-18 220039" src="https://github.com/user-attachments/assets/ce7b06cf-e500-4146-8eef-6deb98be7d73" />
 
 
 ## Result:
